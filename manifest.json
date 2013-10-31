@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "Probanking++",
+  "description": "Enchanches the probanking interface by adding some usefull things like sum.",
+  "version": "1.0",
+  "author": "Geno Roupsky",
+  
+  "permissions": [
+    "https://probanking.procreditbank.bg/"
+  ],
+  
+  "content_scripts": [
+    {
+      "matches": ["https://probanking.procreditbank.bg/docs/docList.asp*"],
+      "js": ["jquery-2.0.3.min.js", "probanking++.user.js"],
+      "all_frames": true
+    }
+  ],
+  
+  "update_url": "http://github.com/mytestextension/updates.xml"
+}
